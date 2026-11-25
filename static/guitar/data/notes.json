@@ -1,0 +1,9 @@
+{
+  "_about": "Note spelling for the 12 pitch classes (index 0 = C). Chord-chart spelling: C# and F# sharp, Eb / Ab / Bb flat. minorSharp: roots whose minor-family chords are written with a sharp instead (G#m, D#m — keys of E and B).",
+  "names": ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"],
+  "solfege": {
+    "vi": ["Đô", "Đô#", "Rê", "Mi♭", "Mi", "Fa", "Fa#", "Sol", "La♭", "La", "Si♭", "Si"],
+    "en": ["Do", "Do#", "Re", "Mi♭", "Mi", "Fa", "Fa#", "Sol", "La♭", "La", "Si♭", "Si"]
+  },
+  "minorSharp": { "3": "D#", "8": "G#" }
+}

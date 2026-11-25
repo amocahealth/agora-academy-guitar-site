@@ -1,0 +1,17 @@
+{
+  "_about": "Tuning presets. notes = MIDI numbers, string 6 (lowest) → string 1. The first entry is the default. Add a preset by adding an object here.",
+  "tunings": [
+    { "id": "standard",    "label": "Standard — E A D G B E",               "notes": [40, 45, 50, 55, 59, 64] },
+    { "id": "halfdown",    "label": "Half-step down — Eb Ab Db Gb Bb Eb",   "notes": [39, 44, 49, 54, 58, 63] },
+    { "id": "dropd",       "label": "Drop D — D A D G B E",                 "notes": [38, 45, 50, 55, 59, 64] },
+    { "id": "doubledropd", "label": "Double Drop D — D A D G B D",          "notes": [38, 45, 50, 55, 59, 62] },
+    { "id": "dadgad",      "label": "DADGAD — D A D G A D",                 "notes": [38, 45, 50, 55, 57, 62] },
+    { "id": "openg",       "label": "Open G — D G D G B D",                 "notes": [38, 43, 50, 55, 59, 62] },
+    { "id": "opend",       "label": "Open D — D A D F# A D",                "notes": [38, 45, 50, 54, 57, 62] },
+    { "id": "opene",       "label": "Open E — E B E G# B E",                "notes": [40, 47, 52, 56, 59, 64] },
+    { "id": "dropc",       "label": "Drop C — C G C F A D",                 "notes": [36, 43, 48, 53, 57, 62] }
+  ],
+  "frets": 15,
+  "maxCapo": 9,
+  "retuneRange": [28, 70]
+}

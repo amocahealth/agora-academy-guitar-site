@@ -1,0 +1,25 @@
+{
+  "_about": "Chord types. symbol = what follows the root in a chord name (\"\" = major); intervals = semitones above the root (the chord tones). Order matters: the chord-name display tries types in this order. For chords of 4+ notes the perfect 5th (7) is optional when searching for shapes. aliases map other spellings to a symbol.",
+  "qualities": [
+    { "symbol": "",      "name": "major",               "intervals": [0, 4, 7] },
+    { "symbol": "m",     "name": "minor",               "intervals": [0, 3, 7] },
+    { "symbol": "7",     "name": "dominant 7th",        "intervals": [0, 4, 7, 10] },
+    { "symbol": "maj7",  "name": "major 7th",           "intervals": [0, 4, 7, 11] },
+    { "symbol": "m7",    "name": "minor 7th",           "intervals": [0, 3, 7, 10] },
+    { "symbol": "6",     "name": "major 6th",           "intervals": [0, 4, 7, 9] },
+    { "symbol": "m6",    "name": "minor 6th",           "intervals": [0, 3, 7, 9] },
+    { "symbol": "sus2",  "name": "suspended 2nd",       "intervals": [0, 2, 7] },
+    { "symbol": "sus4",  "name": "suspended 4th",       "intervals": [0, 5, 7] },
+    { "symbol": "7sus4", "name": "7th suspended 4th",   "intervals": [0, 5, 7, 10] },
+    { "symbol": "add9",  "name": "added 9th",           "intervals": [0, 2, 4, 7] },
+    { "symbol": "9",     "name": "dominant 9th",        "intervals": [0, 2, 4, 7, 10] },
+    { "symbol": "m9",    "name": "minor 9th",           "intervals": [0, 2, 3, 7, 10] },
+    { "symbol": "dim",   "name": "diminished",          "intervals": [0, 3, 6] },
+    { "symbol": "dim7",  "name": "diminished 7th",      "intervals": [0, 3, 6, 9] },
+    { "symbol": "m7b5",  "name": "half-diminished",     "intervals": [0, 3, 6, 10] },
+    { "symbol": "aug",   "name": "augmented",           "intervals": [0, 4, 8] }
+  ],
+  "aliases": { "M7": "maj7", "Δ7": "maj7", "min": "m", "-": "m", "mi": "m", "ø": "m7b5", "°": "dim", "+": "aug", "sus": "sus4" },
+  "fifthInBassAllowed": ["", "m"],
+  "_fifthInBassAllowed": "A 5th in the bass is a normal inversion (C/G) only for plain major / minor triads; for sus chords it is a different chord (Csus2 over G = Gsus4)."
+}

@@ -1,0 +1,18 @@
+{
+  "vi": {
+    "tuning": "Lên dây", "custom": "Tùy chỉnh", "capo": "Capo", "none": "Không", "chord": "Hợp âm", "shape": "Thế bấm",
+    "down": "↓ Quạt xuống", "up": "↑ Quạt lên", "arp": "Rải", "clear": "Xóa", "tones": "Hiện nốt của hợp âm trên cần đàn",
+    "fingers": "Ngón tay", "notes": "Tên nốt", "solf": "Đô Rê Mi", "letters": "C D E", "noShape": "Không tìm thấy thế bấm cho dây này",
+    "custom_chord": "Tự bấm",
+    "hint": "Bấm vào phím để đặt ngón và nghe nốt · bấm bên trái đầu đàn để đổi dây buông/không gảy · nút − + để chỉnh từng dây.",
+    "variant": "Thế", "unknown": "Chưa nhận ra hợp âm", "reset": "Chuẩn"
+  },
+  "en": {
+    "tuning": "Tuning", "custom": "Custom", "capo": "Capo", "none": "None", "chord": "Chord", "shape": "Shape",
+    "down": "↓ Strum down", "up": "↑ Strum up", "arp": "Arpeggio", "clear": "Clear", "tones": "Show chord tones on the neck",
+    "fingers": "Fingers", "notes": "Note names", "solf": "Do Re Mi", "letters": "C D E", "noShape": "No playable shape in this tuning",
+    "custom_chord": "Custom",
+    "hint": "Tap a fret to place a finger and hear it · tap left of the nut to toggle open/muted · use − + to retune a string.",
+    "variant": "Shape", "unknown": "Chord not recognised", "reset": "Standard"
+  }
+}

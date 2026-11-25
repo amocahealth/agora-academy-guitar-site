@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thiết kế chương trình học · Agora Academy · Guitar</title>
+  <meta name="description" content="Nguyên tắc và quy trình thiết kế khóa học guitar: thiết kế ngược từ kết quả, viết mục tiêu đo được, sắp xếp bài theo kỹ năng nền, tải nhận thức, ôn tập xoắn ốc, đánh giá bằng rubric, phân hóa và cải tiến theo dữ liệu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+  <link rel="stylesheet" href="/agora-academy-guitar-site/static/style.css">
+  <script>try{var t=JSON.parse(localStorage.getItem('agora-guitar:theme')||'null');if(t==='sky'||t==='spring')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎸</text></svg>">
+</head>
+<body class="page-lesson lvl-01" data-rel="01-huong-dan-giao-vien/11-thiet-ke-chuong-trinh-hoc">
+  <header class="topbar">
+    <button class="nav-toggle" type="button" aria-controls="sidebar" aria-expanded="false">☰ <span>Mục lục</span></button>
+    <a class="brand" href="/agora-academy-guitar-site/vi/"><span class="brand-pick" aria-hidden="true"></span>Agora Academy · Guitar</a>
+    <nav class="lang-switch" aria-label="Language"><a href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/11-thiet-ke-chuong-trinh-hoc/" hreflang="vi" aria-current="true"><span class="lang-name">Tiếng Việt</span><span class="lang-code">VI</span></a><a href="/agora-academy-guitar-site/en/01-huong-dan-giao-vien/11-thiet-ke-chuong-trinh-hoc/" hreflang="en"><span class="lang-name">English</span><span class="lang-code">EN</span></a></nav>
+    <div class="topbar-strings" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar"><a class="nav-home" href="/agora-academy-guitar-site/vi/">🏠 Trang chủ</a><ul class="nav-sections"><li class="lvl-00"><details><summary><a href="/agora-academy-guitar-site/vi/00-bat-dau/">Bắt đầu: Nốt nhạc &amp; hợp âm</a></summary><ul><li><a class="track-chung" data-rel="00-bat-dau/01-not-co-ban-tung-day" href="/agora-academy-guitar-site/vi/00-bat-dau/01-not-co-ban-tung-day/">Bài 1: Nốt cơ bản trên từng dây</a></li><li><a class="" data-rel="00-bat-dau/02-bang-hop-am" href="/agora-academy-guitar-site/vi/00-bat-dau/02-bang-hop-am/">Bảng hợp âm thông dụng</a></li></ul></details></li><li class="lvl-00"><details><summary><a href="/agora-academy-guitar-site/vi/00-tong-quan/">Tổng quan chương trình</a></summary><ul><li><a class="" data-rel="00-tong-quan/01-triet-ly-giang-day" href="/agora-academy-guitar-site/vi/00-tong-quan/01-triet-ly-giang-day/">Triết lý giảng dạy</a></li><li><a class="" data-rel="00-tong-quan/02-lo-trinh-cap-do" href="/agora-academy-guitar-site/vi/00-tong-quan/02-lo-trinh-cap-do/">Lộ trình cấp độ</a></li><li><a class="" data-rel="00-tong-quan/03-danh-gia-dau-vao" href="/agora-academy-guitar-site/vi/00-tong-quan/03-danh-gia-dau-vao/">Đánh giá đầu vào</a></li><li><a class="" data-rel="00-tong-quan/04-cach-dung-tai-lieu" href="/agora-academy-guitar-site/vi/00-tong-quan/04-cach-dung-tai-lieu/">Cách dùng tài liệu</a></li><li><a class="" data-rel="00-tong-quan/05-cach-doc-ky-hieu" href="/agora-academy-guitar-site/vi/00-tong-quan/05-cach-doc-ky-hieu/">Cách đọc ký hiệu guitar</a></li><li><a class="" data-rel="00-tong-quan/06-dan-guitar-ao" href="/agora-academy-guitar-site/vi/00-tong-quan/06-dan-guitar-ao/">Đàn guitar ảo</a></li></ul></details></li><li class="lvl-01"><details open><summary><a href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/">Hướng dẫn dạy online</a></summary><ul><li><a class="" data-rel="01-huong-dan-giao-vien/01-thiet-bi-phong-day" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/01-thiet-bi-phong-day/">Thiết bị và phòng dạy</a></li><li><a class="" data-rel="01-huong-dan-giao-vien/02-phan-mem-nen-tang" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/02-phan-mem-nen-tang/">Phần mềm và nền tảng</a></li><li><a class="" data-rel="01-huong-dan-giao-vien/03-cau-truc-buoi-hoc" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/03-cau-truc-buoi-hoc/">Cấu trúc buổi học</a></li><li><a class="" data-rel="01-huong-dan-giao-vien/04-giao-tiep-hoc-vien-viet" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/04-giao-tiep-hoc-vien-viet/">Giao tiếp với học viên Việt</a></li><li><a class="" data-rel="01-huong-dan-giao-vien/05-bai-tap-va-phan-hoi" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/05-bai-tap-va-phan-hoi/">Bài tập và phản hồi</a></li><li><a class="" data-rel="01-huong-dan-giao-vien/06-danh-gia-tien-bo" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/06-danh-gia-tien-bo/">Đánh giá tiến bộ</a></li><li><a class="" data-rel="01-huong-dan-giao-vien/07-lop-nhom-va-ca-nhan" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/07-lop-nhom-va-ca-nhan/">Lớp nhóm và lớp cá nhân</a></li><li><a class="" data-rel="01-huong-dan-giao-vien/08-xu-ly-su-co" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/08-xu-ly-su-co/">Xử lý sự cố</a></li><li><a class="" data-rel="01-huong-dan-giao-vien/09-video-bai-giang-ke-hoach-va-quay" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/09-video-bai-giang-ke-hoach-va-quay/">Video bài giảng (1): Lên kế hoạch và quay</a></li><li><a class="" data-rel="01-huong-dan-giao-vien/10-video-bai-giang-bien-tap-va-xuat-ban" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/10-video-bai-giang-bien-tap-va-xuat-ban/">Video bài giảng (2): Biên tập và xuất bản</a></li><li><a class="" data-rel="01-huong-dan-giao-vien/11-thiet-ke-chuong-trinh-hoc" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/11-thiet-ke-chuong-trinh-hoc/" aria-current="page">Thiết kế chương trình học</a></li></ul></details></li><li class="lvl-02"><details><summary><a href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/">Cấp 1: Nhập môn</a></summary><ul><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/01-lam-quen-cay-dan" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/01-lam-quen-cay-dan/">Bài 1: Làm quen cây đàn</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/02-tu-the-cam-dan" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/02-tu-the-cam-dan/">Bài 2: Tư thế cầm đàn</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/03-len-day" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/03-len-day/">Bài 3: Lên dây đàn</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/04-tay-phai-co-ban" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/04-tay-phai-co-ban/">Bài 4: Tay phải cơ bản</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/05-tay-trai-bam-phim" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/05-tay-trai-bam-phim/">Bài 5: Tay trái bấm phím</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/06-doc-tab-so-do-hop-am" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/06-doc-tab-so-do-hop-am/">Bài 6: Đọc tab và sơ đồ hợp âm</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/07-hop-am-em-am" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/07-hop-am-em-am/">Bài 7: Hợp âm Em và Am</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/08-hop-am-c-g-d" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/08-hop-am-c-g-d/">Bài 8: Hợp âm C, G, D</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/09-nhip-va-metronome" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/09-nhip-va-metronome/">Bài 9: Nhịp và metronome</a></li><li><a class="track-dem-hat" data-rel="02-cap-1-nhap-mon/10-dieu-dem-dau-tien" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/10-dieu-dem-dau-tien/">Bài 10: Điệu đệm đầu tiên</a></li><li><a class="track-co-dien" data-rel="02-cap-1-nhap-mon/11-giai-dieu-don-gian" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/11-giai-dieu-don-gian/">Bài 11: Giai điệu đơn giản</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/12-on-tap-kiem-tra" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/12-on-tap-kiem-tra/">Bài 12: Ôn tập và kiểm tra Cấp 1</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/13-khoi-dong-va-bai-tap-ngon" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/13-khoi-dong-va-bai-tap-ngon/">Bổ trợ 1: Khởi động và bài tập ngón</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/14-tu-tap-hieu-qua" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/14-tu-tap-hieu-qua/">Bổ trợ 2: Tự tập hiệu quả ở nhà</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/15-nhac-ly-va-cam-am-co-ban" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/15-nhac-ly-va-cam-am-co-ban/">Bổ trợ 3: Nhạc lý và cảm âm cơ bản</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/16-kho-bai-tap-thuc-hanh" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/16-kho-bai-tap-thuc-hanh/">Bổ trợ 4: Kho bài tập thực hành Cấp 1</a></li><li><a class="track-chung" data-rel="02-cap-1-nhap-mon/17-hoi-dap-nguoi-moi" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/17-hoi-dap-nguoi-moi/">Bổ trợ 5: Hỏi đáp cho người mới</a></li></ul></details></li><li class="lvl-03"><details><summary><a href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/">Cấp 2: Cơ bản</a></summary><ul><li><a class="track-co-dien" data-rel="03-cap-2-co-ban/01-doc-not-khoa-sol" href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/01-doc-not-khoa-sol/">Bài 1: Đọc nốt khóa Sol</a></li><li><a class="track-co-dien" data-rel="03-cap-2-co-ban/02-not-day-1-2-3" href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/02-not-day-1-2-3/">Bài 2: Nốt trên dây 1, 2, 3</a></li><li><a class="track-co-dien" data-rel="03-cap-2-co-ban/03-not-day-4-5-6" href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/03-not-day-4-5-6/">Bài 3: Nốt trên dây 4, 5, 6</a></li><li><a class="track-co-dien" data-rel="03-cap-2-co-ban/04-apoyando-tirando" href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/04-apoyando-tirando/">Bài 4: Apoyando và tirando</a></li><li><a class="track-chung" data-rel="03-cap-2-co-ban/05-arpeggio-pima" href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/05-arpeggio-pima/">Bài 5: Rải hợp âm p-i-m-a</a></li><li><a class="track-chung" data-rel="03-cap-2-co-ban/06-hop-am-7-va-sus" href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/06-hop-am-7-va-sus/">Bài 6: Hợp âm 7 và sus</a></li><li><a class="track-dem-hat" data-rel="03-cap-2-co-ban/07-dieu-ballad-boston" href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/07-dieu-ballad-boston/">Bài 7: Điệu Ballad và Boston</a></li><li><a class="track-dem-hat" data-rel="03-cap-2-co-ban/08-dieu-bolero-slow-rock" href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/08-dieu-bolero-slow-rock/">Bài 8: Điệu Bolero và Slow rock</a></li><li><a class="track-chung" data-rel="03-cap-2-co-ban/09-hop-am-chan-f-bm" href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/09-hop-am-chan-f-bm/">Bài 9: Hợp âm chặn F và Bm</a></li><li><a class="track-dem-hat" data-rel="03-cap-2-co-ban/10-bass-luan-phien" href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/10-bass-luan-phien/">Bài 10: Bass luân phiên</a></li><li><a class="track-co-dien" data-rel="03-cap-2-co-ban/11-etude-co-dien-dau-tien" href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/11-etude-co-dien-dau-tien/">Bài 11: Etude cổ điển đầu tiên</a></li><li><a class="track-chung" data-rel="03-cap-2-co-ban/12-on-tap-kiem-tra" href="/agora-academy-guitar-site/vi/03-cap-2-co-ban/12-on-tap-kiem-tra/">Bài 12: Ôn tập và kiểm tra cuối cấp</a></li></ul></details></li><li class="lvl-04"><details><summary><a href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/">Cấp 3: Trung cấp</a></summary><ul><li><a class="track-co-dien" data-rel="04-cap-3-trung-cap/01-cac-the-bam" href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/01-cac-the-bam/">Bài 1: Các thế bấm II, V, VII và nốt trên cần đàn</a></li><li><a class="track-chung" data-rel="04-cap-3-trung-cap/02-hop-am-chan-day-du" href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/02-hop-am-chan-day-du/">Bài 2: Hợp âm chặn đầy đủ — dáng E và dáng A</a></li><li><a class="track-chung" data-rel="04-cap-3-trung-cap/03-legato-luyen-ngon" href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/03-legato-luyen-ngon/">Bài 3: Legato và luyện ngón tay trái</a></li><li><a class="track-chung" data-rel="04-cap-3-trung-cap/04-gam-truong-thu" href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/04-gam-truong-thu/">Bài 4: Gam trưởng, gam thứ và giọng</a></li><li><a class="track-dem-hat" data-rel="04-cap-3-trung-cap/05-hoa-am-ung-dung" href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/05-hoa-am-ung-dung/">Bài 5: Hòa âm ứng dụng — vòng hòa âm, dịch giọng, capo</a></li><li><a class="track-dem-hat" data-rel="04-cap-3-trung-cap/06-dieu-bossa-nova" href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/06-dieu-bossa-nova/">Bài 6: Điệu Bossa Nova</a></li><li><a class="track-dem-hat" data-rel="04-cap-3-trung-cap/07-dieu-chachacha-rumba" href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/07-dieu-chachacha-rumba/">Bài 7: Điệu Cha cha cha, Rumba và Disco</a></li><li><a class="track-dem-hat" data-rel="04-cap-3-trung-cap/08-fingerstyle-dem-hat" href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/08-fingerstyle-dem-hat/">Bài 8: Fingerstyle đệm hát — Travis picking</a></li><li><a class="track-co-dien" data-rel="04-cap-3-trung-cap/09-sac-thai-am-sac" href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/09-sac-thai-am-sac/">Bài 9: Sắc thái và âm sắc</a></li><li><a class="track-co-dien" data-rel="04-cap-3-trung-cap/10-tac-pham-tarrega" href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/10-tac-pham-tarrega/">Bài 10: Tác phẩm Tárrega — Lágrima và Adelita</a></li><li><a class="track-co-dien" data-rel="04-cap-3-trung-cap/11-romance-anonimo" href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/11-romance-anonimo/">Bài 11: Romance Anónimo — trọn bài</a></li><li><a class="track-chung" data-rel="04-cap-3-trung-cap/12-bieu-dien-truoc-camera" href="/agora-academy-guitar-site/vi/04-cap-3-trung-cap/12-bieu-dien-truoc-camera/">Bài 12: Biểu diễn trước camera — kiểm tra cuối Cấp 3</a></li></ul></details></li><li class="lvl-05"><details><summary><a href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/">Cấp 4: Nâng cao</a></summary><ul><li><a class="track-co-dien" data-rel="05-cap-4-nang-cao/01-ky-thuat-tremolo" href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/01-ky-thuat-tremolo/">Bài 1: Kỹ thuật tremolo</a></li><li><a class="track-chung" data-rel="05-cap-4-nang-cao/02-rasgueado" href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/02-rasgueado/">Bài 2: Rasgueado</a></li><li><a class="track-chung" data-rel="05-cap-4-nang-cao/03-boi-am-harmonics" href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/03-boi-am-harmonics/">Bài 3: Bồi âm (harmonics)</a></li><li><a class="track-co-dien" data-rel="05-cap-4-nang-cao/04-the-cao-va-chan-nua" href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/04-the-cao-va-chan-nua/">Bài 4: Thế bấm cao và chặn nửa</a></li><li><a class="track-co-dien" data-rel="05-cap-4-nang-cao/05-tac-pham-nang-cao" href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/05-tac-pham-nang-cao/">Bài 5: Tác phẩm nâng cao</a></li><li><a class="track-dem-hat" data-rel="05-cap-4-nang-cao/06-hop-am-mo-rong" href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/06-hop-am-mo-rong/">Bài 6: Hợp âm mở rộng và tái hòa âm</a></li><li><a class="track-chung" data-rel="05-cap-4-nang-cao/07-soan-solo-bai-hat-viet" href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/07-soan-solo-bai-hat-viet/">Bài 7: Soạn guitar solo cho bài hát Việt</a></li><li><a class="track-dem-hat" data-rel="05-cap-4-nang-cao/08-dem-cho-ca-si" href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/08-dem-cho-ca-si/">Bài 8: Đệm cho ca sĩ</a></li><li><a class="track-chung" data-rel="05-cap-4-nang-cao/09-ung-tac-co-ban" href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/09-ung-tac-co-ban/">Bài 9: Ứng tác cơ bản</a></li><li><a class="track-chung" data-rel="05-cap-4-nang-cao/10-choi-trong-ban-nhac" href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/10-choi-trong-ban-nhac/">Bài 10: Chơi trong ban nhạc</a></li><li><a class="track-chung" data-rel="05-cap-4-nang-cao/11-thu-am-tai-nha" href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/11-thu-am-tai-nha/">Bài 11: Thu âm và quay video biểu diễn tại nhà</a></li><li><a class="track-chung" data-rel="05-cap-4-nang-cao/12-recital-tot-nghiep" href="/agora-academy-guitar-site/vi/05-cap-4-nang-cao/12-recital-tot-nghiep/">Bài 12: Recital tốt nghiệp</a></li></ul></details></li><li class="lvl-06"><details><summary><a href="/agora-academy-guitar-site/vi/06-phu-luc/">Phụ lục</a></summary><ul><li><a class="" data-rel="06-phu-luc/01-thuat-ngu-viet-anh" href="/agora-academy-guitar-site/vi/06-phu-luc/01-thuat-ngu-viet-anh/">Thuật ngữ Việt – Anh – Ý/Tây Ban Nha</a></li><li><a class="" data-rel="06-phu-luc/02-danh-sach-bai-hat" href="/agora-academy-guitar-site/vi/06-phu-luc/02-danh-sach-bai-hat/">Danh sách bài hát và tác phẩm gợi ý</a></li><li><a class="" data-rel="06-phu-luc/03-mau-ke-hoach-tap-luyen" href="/agora-academy-guitar-site/vi/06-phu-luc/03-mau-ke-hoach-tap-luyen/">Mẫu kế hoạch tập luyện hằng tuần</a></li><li><a class="" data-rel="06-phu-luc/04-mau-phieu-danh-gia" href="/agora-academy-guitar-site/vi/06-phu-luc/04-mau-phieu-danh-gia/">Mẫu phiếu đánh giá học viên</a></li><li><a class="" data-rel="06-phu-luc/05-tai-nguyen-tham-khao" href="/agora-academy-guitar-site/vi/06-phu-luc/05-tai-nguyen-tham-khao/">Tài nguyên tham khảo</a></li></ul></details></li></ul></aside>
+
+    <main class="content">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/agora-academy-guitar-site/vi/">Trang chủ</a> <span>›</span> <a href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/">Hướng dẫn dạy online</a> <span>›</span> <span aria-current="page">Thiết kế chương trình học</span></nav>
+      
+      <article>
+        <header class="page-head lesson-head"><div class="inlay big" aria-hidden="true">11</div><div class="head-text"><p class="kicker">Hướng dẫn dạy online · Bài 11/11</p><h1>Thiết kế chương trình học</h1><div class="badges"><span class="badge badge-status">Bản nháp</span></div><p class="lead">Nguyên tắc và quy trình thiết kế khóa học guitar: thiết kế ngược từ kết quả, viết mục tiêu đo được, sắp xếp bài theo kỹ năng nền, tải nhận thức, ôn tập xoắn ốc, đánh giá bằng rubric, phân hóa và cải tiến theo dữ liệu.</p></div></header><nav class="fret-strip" aria-label="Các bài học"><a class="fret" data-rel="01-huong-dan-giao-vien/01-thiet-bi-phong-day" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/01-thiet-bi-phong-day/" title="Thiết bị và phòng dạy"><span>1</span></a><a class="fret" data-rel="01-huong-dan-giao-vien/02-phan-mem-nen-tang" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/02-phan-mem-nen-tang/" title="Phần mềm và nền tảng"><span>2</span></a><a class="fret" data-rel="01-huong-dan-giao-vien/03-cau-truc-buoi-hoc" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/03-cau-truc-buoi-hoc/" title="Cấu trúc buổi học"><span>3</span></a><a class="fret" data-rel="01-huong-dan-giao-vien/04-giao-tiep-hoc-vien-viet" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/04-giao-tiep-hoc-vien-viet/" title="Giao tiếp với học viên Việt"><span>4</span></a><a class="fret" data-rel="01-huong-dan-giao-vien/05-bai-tap-va-phan-hoi" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/05-bai-tap-va-phan-hoi/" title="Bài tập và phản hồi"><span>5</span></a><a class="fret" data-rel="01-huong-dan-giao-vien/06-danh-gia-tien-bo" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/06-danh-gia-tien-bo/" title="Đánh giá tiến bộ"><span>6</span></a><a class="fret" data-rel="01-huong-dan-giao-vien/07-lop-nhom-va-ca-nhan" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/07-lop-nhom-va-ca-nhan/" title="Lớp nhóm và lớp cá nhân"><span>7</span></a><a class="fret" data-rel="01-huong-dan-giao-vien/08-xu-ly-su-co" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/08-xu-ly-su-co/" title="Xử lý sự cố"><span>8</span></a><a class="fret" data-rel="01-huong-dan-giao-vien/09-video-bai-giang-ke-hoach-va-quay" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/09-video-bai-giang-ke-hoach-va-quay/" title="Video bài giảng (1): Lên kế hoạch và quay"><span>9</span></a><a class="fret" data-rel="01-huong-dan-giao-vien/10-video-bai-giang-bien-tap-va-xuat-ban" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/10-video-bai-giang-bien-tap-va-xuat-ban/" title="Video bài giảng (2): Biên tập và xuất bản"><span>10</span></a><a class="fret current" data-rel="01-huong-dan-giao-vien/11-thiet-ke-chuong-trinh-hoc" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/11-thiet-ke-chuong-trinh-hoc/" title="Thiết kế chương trình học"><span>11</span></a></nav>
+        <nav class="toc"><strong>Trên trang này</strong><ul><li><a href="#muc-tieu">Mục tiêu</a></li><li><a href="#1-thiet-ke-nguoc-backward-design">1. Thiết kế ngược (backward design)</a></li><li><a href="#2-viet-muc-tieu-do-duoc">2. Viết mục tiêu đo được</a></li><li><a href="#3-ban-do-ky-nang-nen-prerequisites">3. Bản đồ kỹ năng nền (prerequisites)</a></li><li><a href="#4-sap-xep-noi-dung-cac-nguyen-tac">4. Sắp xếp nội dung: các nguyên tắc</a></li><li><a href="#5-tai-nhan-thuc-cognitive-load-trong-mot-buoi">5. Tải nhận thức (cognitive load) trong một buổi</a></li><li><a href="#6-thiet-ke-luyen-tap-va-bai-tap-ve-nha">6. Thiết kế luyện tập và bài tập về nhà</a></li><li><a href="#7-danh-gia-thuong-xuyen-va-cuoi-cap">7. Đánh giá: thường xuyên và cuối cấp</a></li><li><a href="#8-phan-hoa-mot-giao-trinh-nhieu-kieu-hoc-vien">8. Phân hóa: một giáo trình, nhiều kiểu học viên</a></li><li><a href="#9-chon-bai-hat-va-tac-pham">9. Chọn bài hát và tác phẩm</a></li><li><a href="#10-phoi-hop-video-buoi-hoc-bai-tap-blended-learning">10. Phối hợp video – buổi học – bài tập (blended learning)</a></li><li><a href="#11-quy-trinh-viet-mot-bai-moi-trong-giao-trinh">11. Quy trình viết một bài mới trong giáo trình</a></li><li><a href="#12-cai-tien-giao-trinh-theo-du-lieu">12. Cải tiến giáo trình theo dữ liệu</a></li><li><a href="#loi-thuong-gap-khi-thiet-ke-chuong-trinh">Lỗi thường gặp khi thiết kế chương trình</a></li><li><a href="#tai-lieu-tham-khao">Tài liệu tham khảo</a></li></ul></nav>
+        <div class="prose"><section class="sec sec-goals">
+<h2 id="muc-tieu">Mục tiêu</h2>
+<ul>
+<li>Giáo viên hiểu <strong>vì sao</strong> giáo trình Agora được sắp xếp như hiện tại, để dạy linh hoạt mà không phá cấu trúc.</li>
+<li>Giáo viên tự thiết kế được một bài mới, một khóa ngắn (ví dụ "Đệm hát cấp tốc 8 buổi") hoặc sửa một bài hiện có theo cùng chuẩn.</li>
+<li>Có quy trình chung để <strong>kiểm tra và cải tiến</strong> giáo trình mỗi học kỳ.</li>
+</ul>
+</section><section class="sec sec-plain">
+<h2 id="1-thiet-ke-nguoc-backward-design">1. Thiết kế ngược (backward design)</h2>
+<p>Thiết kế <strong>từ kết quả cuối cùng về bài đầu tiên</strong>, không phải từ "bài 1 dạy gì" (mô hình <em>Understanding by Design</em> — Wiggins &amp; McTighe).</p>
+<ol>
+<li><strong>Kết quả mong muốn:</strong> sau khóa học, học viên <strong>làm được</strong> gì? (không phải "biết" gì)</li>
+<li><strong>Bằng chứng:</strong> làm sao biết học viên đã làm được? → bài kiểm tra, rubric, video.</li>
+<li><strong>Hoạt động học:</strong> những bài, bài tập, video nào dẫn học viên tới bằng chứng đó?</li>
+</ol>
+<p>Ví dụ Cấp 1:</p>
+<ul>
+<li>Kết quả: "Đệm trọn 1 bài 3–4 hợp âm, mẫu quét cơ bản, không dừng" (<a href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/">Cấp 1</a>).</li>
+<li>Bằng chứng: mục 5–8 của rubric <a href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/12-on-tap-kiem-tra/">Bài 12</a>.</li>
+<li>Hoạt động: Bài 7, 8 (hợp âm) → Bài 9 (nhịp) → Bài 10 (mẫu quét, ráp bài).</li>
+</ul>
+<blockquote>
+<p>Quy tắc kiểm tra: <strong>mỗi mục trong rubric cuối cấp phải được dạy và luyện ở ít nhất 2 bài trước đó</strong>;
+mỗi bài phải phục vụ ít nhất 1 mục trong rubric. Bài không phục vụ mục nào → cân nhắc chuyển thành bài bổ trợ.</p>
+</blockquote>
+</section><section class="sec sec-plain">
+<h2 id="2-viet-muc-tieu-do-duoc">2. Viết mục tiêu đo được</h2>
+<p>Mục tiêu tốt = <strong>động từ quan sát được + điều kiện + tiêu chí</strong>.</p>
+<div class="table-wrap"><table><thead><tr><th>Chưa tốt</th><th>Tốt</th></tr></thead><tbody>
+<tr><td>Hiểu hợp âm C</td><td><strong>Bấm</strong> C, 5 dây kêu rõ, không gảy dây 6</td></tr>
+<tr><td>Biết điệu Ballad</td><td><strong>Đệm</strong> vòng C – Am – F – G điệu Ballad, tempo 70, 4 vòng không dừng</td></tr>
+<tr><td>Làm quen với metronome</td><td><strong>Chơi</strong> 1-2-3-4 khớp metronome 60, mỗi phách 1 nốt, 3 lượt</td></tr>
+<tr><td>Cảm nhận âm nhạc tốt hơn</td><td><strong>Phân biệt</strong> hợp âm trưởng / thứ, đúng 8/10 câu</td></tr>
+</tbody></table>
+</div>
+<ul>
+<li>Động từ nên dùng: <em>chơi, bấm, đệm, rải, chuyển, đọc, đếm, nhận ra, phân biệt, giữ (nhịp), tự lên dây, trình diễn</em>.</li>
+<li>Động từ nên tránh: <em>hiểu, biết, làm quen, cảm nhận, nắm được</em> — không quan sát được.</li>
+<li><strong>Tối đa 3 mục tiêu mỗi bài.</strong> Nhiều hơn → bài quá tải, hoặc nên tách bài.</li>
+<li>Mục tiêu → chuyển thẳng thành <strong>"Tiêu chí hoàn thành"</strong> (checkbox) ở cuối trang bài học.</li>
+</ul>
+</section><section class="sec sec-plain">
+<h2 id="3-ban-do-ky-nang-nen-prerequisites">3. Bản đồ kỹ năng nền (prerequisites)</h2>
+<p>Trước khi xếp thứ tự bài, liệt kê kỹ năng nào <strong>cần có trước</strong> kỹ năng nào.</p>
+<pre><code>Tư thế (B2) ─┬─&gt; Tay phải (B4) ──────────────┬─&gt; Mẫu quét (B10) ─&gt; Ráp bài
+             └─&gt; Tay trái (B5) ─&gt; Đọc sơ đồ (B6) ─&gt; Em, Am (B7) ─&gt; C, G, D (B8) ─┘
+Lên dây (B3) ─────────────────────────────────────────────────────&gt; mọi bài
+Nhịp, metronome (B9) ─────────────────────────────────────────────&gt; B10, B11, B12
+</code></pre>
+<ul>
+<li>Kỹ năng nằm trên <strong>nhiều đường</strong> (tư thế, lên dây, nhịp) phải dạy sớm và <strong>ôn ở mọi bài</strong>.</li>
+<li>Khi thêm bài mới: xác định nó <strong>cần</strong> những bài nào và <strong>mở khóa</strong> bài nào — đặt số thứ tự theo đó.</li>
+<li>Học viên chuyển từ nơi khác / tự học: kiểm tra đầu vào theo các nút trên bản đồ (<a href="/agora-academy-guitar-site/vi/00-tong-quan/03-danh-gia-dau-vao/">Đánh giá đầu vào</a>).</li>
+</ul>
+</section><section class="sec sec-plain">
+<h2 id="4-sap-xep-noi-dung-cac-nguyen-tac">4. Sắp xếp nội dung: các nguyên tắc</h2>
+<ul>
+<li><strong>Một khó khăn mới mỗi lần:</strong> bài mới ở tay trái thì tay phải giữ mẫu đã quen, và ngược lại.
+(Bài 7: hợp âm mới + quét xuống đơn giản; Bài 10: hợp âm cũ + mẫu quét mới.)</li>
+<li><strong>Đơn giản → phức tạp, chậm → nhanh, tách rời → kết hợp:</strong> tay trái riêng → tay phải riêng → hai tay → thêm metronome → thêm hát.</li>
+<li><strong>Thắng sớm (early win):</strong> học viên phải chơi được <strong>"một thứ ra nhạc"</strong> trong 2–3 buổi đầu (Em – Am quét xuống),
+và một bài trọn vẹn quanh buổi 10. Người lớn bỏ học nhiều nhất ở tuần 3–6 khi chưa chơi được gì "ra bài".</li>
+<li><strong>Xoắn ốc (spiral curriculum):</strong> mỗi kỹ năng quay lại ở cấp sau với độ khó cao hơn:
+<ul>
+<li>Rải dây buông (Cấp 1) → arpeggio p-i-m-a (Cấp 2) → fingerstyle đệm hát (Cấp 3) → tremolo (Cấp 4).</li>
+<li>Quét ↓↑ (Cấp 1) → Ballad, Bolero (Cấp 2) → Bossa Nova, Rumba (Cấp 3) → Rasgueado (Cấp 4).</li>
+</ul>
+</li>
+<li><strong>Ôn tập giãn cách (spaced review):</strong> mỗi buổi có 10 phút ôn bài cũ — không chỉ bài liền trước, mà cả bài 2–4 tuần trước.</li>
+<li><strong>Đan xen (interleaving):</strong> sau khi học riêng từng hợp âm, luyện <strong>trộn lẫn</strong> (vòng hợp âm ngẫu nhiên) — khó hơn khi tập nhưng nhớ lâu hơn.</li>
+<li><strong>Lý thuyết đi sau thực hành:</strong> cho chơi trước, giải thích sau ("vì sao Am → C chỉ dời 1 ngón" — <a href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/15-nhac-ly-va-cam-am-co-ban/">Bổ trợ 3</a>).</li>
+</ul>
+</section><section class="sec sec-plain">
+<h2 id="5-tai-nhan-thuc-cognitive-load-trong-mot-buoi">5. Tải nhận thức (cognitive load) trong một buổi</h2>
+<ul>
+<li>Trí nhớ làm việc của người học chỉ giữ được <strong>vài thông tin mới</strong> một lúc — người mới học đàn vừa nghĩ ngón tay, vừa nghĩ nhịp, vừa nghe tiếng.</li>
+<li>Mỗi buổi: <strong>1–2 kỹ năng mới</strong>, phần còn lại là ôn và luyện.</li>
+<li>Chia kỹ năng thành <strong>bước nhỏ</strong> có thể thành công ngay (đặt ngón 3 → thêm ngón 2 → thêm ngón 1 → gảy từng dây).</li>
+<li>Trình tự <strong>"Thầy làm – Cùng làm – Trò tự làm"</strong> (I do – we do – you do), bản online:
+<ul>
+<li><em>Thầy làm:</em> làm mẫu tốc độ thật + chậm (hoặc video bài giảng xem trước).</li>
+<li><em>Cùng làm:</em> gọi – đáp từng đoạn nhỏ (không chơi cùng lúc qua mạng).</li>
+<li><em>Trò tự làm:</em> trò chơi với metronome trên máy mình, thầy tắt mic quan sát.</li>
+</ul>
+</li>
+<li>Học viên trả lời được "Hôm nay em học điều gì?" bằng <strong>1 câu</strong> → buổi học đủ tập trung.</li>
+</ul>
+</section><section class="sec sec-plain">
+<h2 id="6-thiet-ke-luyen-tap-va-bai-tap-ve-nha">6. Thiết kế luyện tập và bài tập về nhà</h2>
+<ul>
+<li>Bài tập về nhà = <strong>luyện tập có chủ đích</strong> (<a href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/14-tu-tap-hieu-qua/">Bổ trợ 2</a>): mục tiêu nhỏ, đo được, có phản hồi.</li>
+<li>Mỗi bài tập có <strong>con số</strong>: tempo, số lần, số vòng, số phút ("1 phút chuyển hợp âm Am – C, ghi số lần").</li>
+<li>Tổng thời gian bài tập khớp với thời gian tập thực tế của học viên (Cấp 1: 20–30 phút/ngày; trẻ em 10–15).</li>
+<li>Luôn có <strong>1 phần "chơi cho vui"</strong> — bài hát học viên thích — để giữ động lực.</li>
+<li>Bài tập nộp bằng <strong>video ngắn</strong> → giáo viên có bằng chứng để đánh giá tiến bộ (<a href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/05-bai-tap-va-phan-hoi/">Bài tập và phản hồi</a>).</li>
+</ul>
+</section><section class="sec sec-plain">
+<h2 id="7-danh-gia-thuong-xuyen-va-cuoi-cap">7. Đánh giá: thường xuyên và cuối cấp</h2>
+<ul>
+<li><strong>Đánh giá thường xuyên (formative):</strong> mỗi buổi — checkbox "Tiêu chí hoàn thành", video bài tập, quan sát qua camera.
+Mục đích: <strong>điều chỉnh việc dạy</strong>, không phải cho điểm.</li>
+<li><strong>Đánh giá cuối cấp (summative):</strong> buổi 12 — rubric, quyết định lên cấp.</li>
+<li>Thiết kế rubric tốt:
+<ul>
+<li>3–4 mức (0–1–2 hoặc 1–2–3–4), mỗi mức mô tả <strong>điều quan sát được</strong>, không phải "khá / tốt".</li>
+<li>Mỗi mục rubric <strong>khớp 1 mục tiêu</strong> đã dạy; không kiểm tra thứ chưa dạy.</li>
+<li>Ngưỡng đạt rõ ràng + quy tắc cho mục 0 điểm (xem rubric <a href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/12-on-tap-kiem-tra/">Bài 12</a>).</li>
+<li>Hai giáo viên chấm cùng một video → chênh lệch ≤ 1 điểm mỗi mục. Chênh nhiều → sửa mô tả rubric.</li>
+</ul>
+</li>
+<li>Online: phần âm thanh chấm bằng <strong>video quay sẵn</strong>, phần tư thế chấm qua <strong>camera trực tiếp</strong>.</li>
+</ul>
+</section><section class="sec sec-plain">
+<h2 id="8-phan-hoa-mot-giao-trinh-nhieu-kieu-hoc-vien">8. Phân hóa: một giáo trình, nhiều kiểu học viên</h2>
+<ul>
+<li><strong>Nhánh (track):</strong> <code>chung</code> → mọi người; <code>co-dien</code> / <code>dem-hat</code> → theo mục tiêu. Cấp 1 học chung, tách rõ từ Cấp 2.</li>
+<li><strong>Học viên nhanh:</strong> giao thêm bài ở <a href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/16-kho-bai-tap-thuc-hanh/">Kho bài tập thực hành</a> (★★★), <strong>không</strong> nhảy bài — kỹ năng nền vẫn cần đủ thời gian.</li>
+<li><strong>Học viên chậm:</strong> tách 1 bài thành 2 buổi (cho phép ở Cấp 1), giảm tempo mục tiêu, giữ nguyên thứ tự bài.</li>
+<li><strong>Trẻ em:</strong> đoạn 10 phút, trò chơi, phụ huynh hỗ trợ; mục tiêu tempo thấp hơn.</li>
+<li><strong>Người lớn đi làm:</strong> bài tập ngắn, thực tế; bài hát họ thích từ sớm.</li>
+<li>Ghi phân hóa vào phần <strong>"Lưu ý khi dạy"</strong> của bài, không tạo bài riêng cho từng nhóm.</li>
+</ul>
+</section><section class="sec sec-plain">
+<h2 id="9-chon-bai-hat-va-tac-pham">9. Chọn bài hát và tác phẩm</h2>
+<p>Tiêu chí, theo thứ tự ưu tiên:</p>
+<ol>
+<li><strong>Phục vụ mục tiêu kỹ thuật</strong> của bài (chỉ dùng hợp âm / kỹ thuật đã học + tối đa 1 điều mới).</li>
+<li><strong>Học viên muốn chơi</strong> — nhạc Việt (V-pop, ballad, bolero, nhạc Trịnh…), nhạc quốc tế quen thuộc.</li>
+<li><strong>Bản quyền:</strong> tài liệu chung chỉ ghi <strong>tên bài + hợp âm</strong>; tab / bản nhạc chỉ dùng tác phẩm <strong>public domain</strong>
+(Sor, Carulli, Giuliani, Tárrega, Aguado, dân ca…). Không chép lời bài hát.</li>
+<li><strong>Đa dạng:</strong> nhịp 4/4 và 3/4, trưởng và thứ, chậm và vừa.</li>
+</ol>
+<ul>
+<li>Danh sách bài cập nhật mỗi học kỳ trong <a href="/agora-academy-guitar-site/vi/06-phu-luc/02-danh-sach-bai-hat/">Phụ lục 02</a>.</li>
+</ul>
+</section><section class="sec sec-plain">
+<h2 id="10-phoi-hop-video-buoi-hoc-bai-tap-blended-learning">10. Phối hợp video – buổi học – bài tập (blended learning)</h2>
+<div class="table-wrap"><table><thead><tr><th>Hoạt động</th><th>Hình thức tốt nhất</th><th>Lý do</th></tr></thead><tbody>
+<tr><td>Làm mẫu kỹ thuật, trình diễn mục tiêu</td><td><strong>Video bài giảng</strong> (xem trước)</td><td>Hình, tiếng rõ; xem lại được</td></tr>
+<tr><td>Giải thích lý thuyết ngắn</td><td>Video hoặc trang bài học</td><td>Học viên tự đọc theo tốc độ mình</td></tr>
+<tr><td>Sửa tư thế, sửa lỗi cá nhân</td><td><strong>Buổi học trực tiếp</strong></td><td>Cần quan sát và phản hồi ngay</td></tr>
+<tr><td>Gọi – đáp, luyện có hướng dẫn</td><td>Buổi học trực tiếp</td><td>Tương tác</td></tr>
+<tr><td>Luyện tập lặp lại, tăng tempo</td><td><strong>Tự tập ở nhà</strong> + video tập theo</td><td>Cần nhiều thời gian, không cần giáo viên</td></tr>
+<tr><td>Đánh giá âm thanh, tiến bộ</td><td><strong>Video bài tập</strong></td><td>Chất lượng tiếng tốt hơn Zoom; lưu hồ sơ</td></tr>
+</tbody></table>
+</div>
+<ul>
+<li>Mỗi bài trong giáo trình nên có ít nhất: <strong>1 video mục tiêu + 1–2 video kỹ năng</strong>; bài có ráp bài thêm <strong>1 video tập theo</strong>.
+Hướng dẫn quay: <a href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/09-video-bai-giang-ke-hoach-va-quay/">Video bài giảng (1)</a>, <a href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/10-video-bai-giang-bien-tap-va-xuat-ban/">(2)</a>.</li>
+</ul>
+</section><section class="sec sec-plain">
+<h2 id="11-quy-trinh-viet-mot-bai-moi-trong-giao-trinh">11. Quy trình viết một bài mới trong giáo trình</h2>
+<ol>
+<li>Xác định <strong>chỗ trong bản đồ kỹ năng</strong> (bài cần gì trước, mở khóa gì sau) và <strong>mục rubric</strong> mà bài phục vụ.</li>
+<li>Tạo file từ mẫu: <code>cargo run -- new vi/02-cap-1-nhap-mon/18-ten-bai "Bài 18: Tiêu đề"</code>.</li>
+<li>Viết theo mẫu chuẩn (mục 3 trong <code>docs/CONTENT_GUIDE.md</code> của kho mã nguồn): Mục tiêu → Chuẩn bị → Nội dung chính → Tiến trình → Lưu ý online → Lỗi thường gặp → Bài tập → Tiêu chí → Media.</li>
+<li>Dùng khối ký hiệu (<code>chord</code>, <code>tab</code>, <code>strum</code>, <code>fretboard</code>) thay vì ảnh chụp — sửa dễ, đồng bộ với video.</li>
+<li>Thêm khối <code>media</code> cho mọi video / ảnh / file thu âm <strong>cần có</strong> — kể cả khi chưa quay.</li>
+<li>Dạy thử bài với 1–2 học viên, ghi lại thời gian thực tế từng phần.</li>
+<li>Đổi <code>status = "review"</code>; một giáo viên khác đọc và góp ý theo checklist bên dưới.</li>
+<li>Sửa, đổi <code>status = "ready"</code>; dịch sang tiếng Anh (<code>content/en/</code> cùng đường dẫn).</li>
+</ol>
+<h3 id="checklist-duyet-bai-truoc-khi-doi-sang-ready">Checklist duyệt bài (trước khi đổi sang <code>ready</code>)</h3>
+<ul>
+<li><input disabled="" type="checkbox"/>
+≤ 3 mục tiêu, mỗi mục tiêu có động từ quan sát được và tiêu chí.</li>
+<li><input disabled="" type="checkbox"/>
+Mỗi mục tiêu có 1 dòng tương ứng trong "Tiêu chí hoàn thành".</li>
+<li><input disabled="" type="checkbox"/>
+Chỉ 1–2 kỹ năng mới; các kỹ năng cần trước đã được dạy ở bài trước.</li>
+<li><input disabled="" type="checkbox"/>
+Tiến trình buổi học cộng lại đúng thời lượng (<code>duration</code>), học viên chơi ≥ 50% thời gian.</li>
+<li><input disabled="" type="checkbox"/>
+Có phần ôn bài cũ; có phần "Lưu ý khi dạy online" (gọi – đáp, góc camera).</li>
+<li><input disabled="" type="checkbox"/>
+Bài tập về nhà có con số (tempo, số lần, thời gian) và vừa thời gian tập thực tế.</li>
+<li><input disabled="" type="checkbox"/>
+Thuật ngữ thống nhất với <a href="/agora-academy-guitar-site/vi/06-phu-luc/01-thuat-ngu-viet-anh/">Phụ lục 01</a>; số ngón, sơ đồ đúng.</li>
+<li><input disabled="" type="checkbox"/>
+Không có lời bài hát, tab / bản nhạc có bản quyền.</li>
+<li><input disabled="" type="checkbox"/>
+<code>track</code> đúng nhánh; có khối <code>media</code> cho video mục tiêu và video kỹ năng.</li>
+</ul>
+</section><section class="sec sec-plain">
+<h2 id="12-cai-tien-giao-trinh-theo-du-lieu">12. Cải tiến giáo trình theo dữ liệu</h2>
+<p>Cuối mỗi học kỳ, nhóm giáo viên họp 1 buổi xem các số liệu:</p>
+<div class="table-wrap"><table><thead><tr><th>Dữ liệu</th><th>Lấy ở đâu</th><th>Dấu hiệu cần sửa</th></tr></thead><tbody>
+<tr><td>Điểm từng mục rubric cuối cấp</td><td>Phiếu đánh giá (<a href="/agora-academy-guitar-site/vi/06-phu-luc/04-mau-phieu-danh-gia/">Phụ lục 04</a>)</td><td>&gt; 30% học viên ≤ 1 điểm ở cùng một mục → bài dạy kỹ năng đó cần sửa / thêm buổi</td></tr>
+<tr><td>Bài bị tách thành 2 buổi</td><td>Sổ theo dõi giáo viên</td><td>Cùng một bài bị tách ở &gt; 1/3 học viên → bài quá tải, chia lại</td></tr>
+<tr><td>Tỉ lệ nộp video bài tập</td><td>Drive / Zalo lớp</td><td>Giảm mạnh sau một bài → bài tập quá khó / quá dài</td></tr>
+<tr><td>Học viên nghỉ học</td><td>Danh sách lớp</td><td>Tập trung ở một tuần → xem lại "thắng sớm", độ khó đoạn đó</td></tr>
+<tr><td>Giữ chân người xem video</td><td>YouTube Analytics</td><td>Tụt mạnh ở một đoạn → video khó hiểu, làm lại đoạn đó</td></tr>
+<tr><td>Câu hỏi lặp lại</td><td>Zalo, buổi học</td><td>≥ 3 học viên hỏi cùng câu → thêm vào bài hoặc <a href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/17-hoi-dap-nguoi-moi/">Hỏi đáp</a></td></tr>
+</tbody></table>
+</div>
+<ul>
+<li>Mỗi thay đổi ghi vào <strong>lịch sử git</strong> (commit) với lý do: "Bài 8: tách G–D sang phần luyện riêng vì 40% học viên dừng &gt; 2 phách".</li>
+<li><strong>Đổi ít, đo lại:</strong> mỗi học kỳ sửa 2–3 điểm lớn nhất, không viết lại toàn bộ.</li>
+</ul>
+</section><section class="sec sec-mistakes">
+<h2 id="loi-thuong-gap-khi-thiet-ke-chuong-trinh">Lỗi thường gặp khi thiết kế chương trình</h2>
+<ul>
+<li>Nhồi quá nhiều nội dung vào một bài vì "học viên đóng tiền thì phải dạy nhiều".</li>
+<li>Dạy nhạc lý một mạch nhiều buổi trước khi cho chơi.</li>
+<li>Kiểm tra cuối cấp những thứ chưa luyện (ví dụ đọc nốt nhanh khi chỉ học tab).</li>
+<li>Chỉ có bài tập kỹ thuật, không có bài hát → mất động lực; hoặc chỉ có bài hát, không có kỹ thuật → chững lại ở Cấp 2.</li>
+<li>Mỗi giáo viên dạy một kiểu, đổi thứ tự bài tùy ý → học viên chuyển lớp bị hổng kiến thức.</li>
+<li>Không bao giờ sửa giáo trình dù số liệu cho thấy một bài luôn "khó".</li>
+</ul>
+</section><section class="sec sec-plain">
+<h2 id="tai-lieu-tham-khao">Tài liệu tham khảo</h2>
+<ul>
+<li>Wiggins, G. &amp; McTighe, J. — <em>Understanding by Design</em> (thiết kế ngược).</li>
+<li>Ericsson, K. A. — các nghiên cứu về <em>deliberate practice</em> (luyện tập có chủ đích).</li>
+<li>Sweller, J. — <em>Cognitive Load Theory</em> (tải nhận thức).</li>
+<li>Bruner, J. — <em>The Process of Education</em> (chương trình xoắn ốc).</li>
+<li>Guo, P., Kim, J. &amp; Rubin, R. (2014) — <em>How video production affects student engagement</em> (độ dài video).</li>
+</ul>
+</section></div>
+        
+        <div class="complete-wrap"><button class="complete-btn" type="button" data-rel="01-huong-dan-giao-vien/11-thiet-ke-chuong-trinh-hoc"><span class="when-todo">✓ Đánh dấu đã học xong bài này</span><span class="when-done">🎉 Đã hoàn thành — bấm để bỏ đánh dấu</span></button></div>
+      </article>
+      <nav class="pager"><a class="prev" href="/agora-academy-guitar-site/vi/01-huong-dan-giao-vien/10-video-bai-giang-bien-tap-va-xuat-ban/"><small>← Bài trước</small><span>Video bài giảng (2): Biên tập và xuất bản</span></a><a class="next" href="/agora-academy-guitar-site/vi/02-cap-1-nhap-mon/"><small>Bài tiếp theo →</small><span>Cấp 1: Nhập môn</span></a></nav>
+      <footer class="page-foot">Nguồn trang này: <code>content/vi/01-huong-dan-giao-vien/11-thiet-ke-chuong-trinh-hoc.md</code></footer>
+    </main>
+  </div>
+
+  <div id="tools" class="tools" hidden></div>
+  <script src="/agora-academy-guitar-site/static/app.js" defer></script>
+  <script type="module" src="/agora-academy-guitar-site/static/guitar/main.js"></script>
+</body>
+</html>

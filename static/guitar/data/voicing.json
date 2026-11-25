@@ -1,0 +1,28 @@
+{
+  "_about": "How the chord finder ranks shapes (lower score = shown first). Each weight multiplies the quantity named. Change one number at a time and run scripts/check-vguitar.mjs.",
+  "results": 10,
+  "minStrings": 3,
+  "weights": {
+    "mutedString": 1.0,
+    "frettedNote": 0.4,
+    "spanFret": 1.0,
+    "positionFret": 0.6,
+    "openString": -0.2,
+    "unusedTopString": 1.5,
+    "fewerThan4Strings": 2,
+    "fifthInBass": 3,
+    "handCost": 0.8,
+    "courseShape": -1.5,
+    "openBetweenFrettedPastFret2": 1.5,
+    "openWithHighFret": 0.9,
+    "openWithHighFretPerFret": 0.5
+  },
+  "_weights": {
+    "positionFret": "per fret of the lowest fretted note (prefer shapes near the nut / capo)",
+    "unusedTopString": "per high string not played",
+    "handCost": "times the fingering awkwardness from hand.js",
+    "courseShape": "a shape listed in fingerings.json uses this as its hand cost (then × handCost) — negative, so lesson shapes come first",
+    "openBetweenFrettedPastFret2": "per open string ringing between fretted strings when the hand is at fret 2 or higher",
+    "openWithHighFret": "per open string when the shape reaches fret 4 or higher, plus openWithHighFretPerFret per fret above 3"
+  }
+}

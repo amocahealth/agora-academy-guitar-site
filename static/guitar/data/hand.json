@@ -1,0 +1,24 @@
+{
+  "_about": "Hand model: which finger movements are physically possible, and what makes a fingering awkward. Used by hand.js to choose fingers for any shape that is not in fingerings.json, and to reject shapes no hand can play.",
+  "fingers": 4,
+  "maxSpan": 3,
+  "_maxSpan": "Highest minus lowest fretted fret in one shape (index on fret n, pinky up to n + 3).",
+  "maxExtraStretch": 1,
+  "_maxExtraStretch": "Two fingers may be one fret further apart than their finger numbers (fingers 1 and 2 may cover frets 1 and 3).",
+  "barre": {
+    "_about": "One finger pressing several strings on one fret. The index may lie across strings fretted higher by other fingers; fingers 2–4 only across strings at exactly the barre fret.",
+    "1": { "maxStrings": 6, "overHigherFrets": true,  "cost": 1 },
+    "2": { "maxStrings": 3, "overHigherFrets": false, "cost": 2.5 },
+    "3": { "maxStrings": 3, "overHigherFrets": false, "cost": 2.5, "costAcross3": 1.2 },
+    "4": { "maxStrings": 2, "overHigherFrets": false, "cost": 2.5 }
+  },
+  "costs": {
+    "offPosition": 0.4,
+    "_offPosition": "Per fret, for the first note on each fret: distance from 'one finger per fret' (index on the lowest fret).",
+    "crossedOnFret": 0.6,
+    "_crossedOnFret": "Two fingers on one fret where the lower string has the higher finger number.",
+    "crowdedFret3": 0.3,
+    "crowdedFret4": 1.6,
+    "_crowded": "Three or four different fingers squeezed onto one fret (four usually means: use a barre)."
+  }
+}
